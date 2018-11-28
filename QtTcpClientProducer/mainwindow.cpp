@@ -59,7 +59,7 @@ int MainWindow::random(int min, int max){
     int x;
 
     if(min<max){
-        x= (max-min+1)+min;
+        x= qrand()%(max-min+1)+min;
     }
     else{
         x=0;
@@ -81,7 +81,7 @@ void MainWindow::putData(){
   if(socket->state()== QAbstractSocket::ConnectedState){
 
     msecdate = QDateTime::currentDateTime().toMSecsSinceEpoch();
-    str = "set "+ QString::number(msecdate) + " " + QString::number(qrand()%x)+"\r\n";
+    str = "set "+ QString::number(msecdate) + " " + QString::number(x+"\r\n";
 
       qDebug() << str;
       qDebug() << socket->write(str.toStdString().c_str()) << " bytes written";
