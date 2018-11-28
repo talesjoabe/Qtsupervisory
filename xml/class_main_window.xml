@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_main_window" kind="class" language="C++" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type>Ui::MainWindow *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="57" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1af85cfe62c116f8d2f2021e5411b0356e" prot="private" static="no" mutable="no">
+        <type>QTcpSocket *</type>
+        <definition>QTcpSocket* MainWindow::socket</definition>
+        <argsstring></argsstring>
+        <name>socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="58" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1ae9f09805219987e75b0c0636def59528" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString MainWindow::ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="59" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1ab4f483f5c695321518ac4bf1aa136f64" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="60" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="18" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.cpp" bodystart="6" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="19" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.cpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_main_window_1afdfeb13ec363b0eb8ecacaf0aa13b605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::putData</definition>
+        <argsstring>()</argsstring>
+        <name>putData</name>
+        <briefdescription>
+<para>putData seta as informações </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="25" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.cpp" bodystart="70" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ac5b669957c442b6eb68573dacfce33e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::tcpConnect</definition>
+        <argsstring>()</argsstring>
+        <name>tcpConnect</name>
+        <briefdescription>
+<para>tcpConnect conecta ao servidor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="29" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.cpp" bodystart="33" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a4d22c4c7afc7ba0a2fa4c70515c85dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::tcpDisconnect</definition>
+        <argsstring>()</argsstring>
+        <name>tcpDisconnect</name>
+        <briefdescription>
+<para>tcpDisconnect disconecta ao servidor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="33" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.cpp" bodystart="46" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a5edcbc314e782645cdf4db101eeb247d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>start inicia o envio de dados </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="37" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.cpp" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a939e90ddfe07d74be87b351ca2171fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+<para>stop encerra o envio de dados </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="41" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.cpp" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a9d08a694a5f9c532225754381b8011ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::timerEvent</definition>
+        <argsstring>(QTimerEvent *e)</argsstring>
+        <name>timerEvent</name>
+        <param>
+          <type>QTimerEvent *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>timerEvent </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="46" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.cpp" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ab578b34d109b5f7a290ef3d75cb3ad6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MainWindow::random</definition>
+        <argsstring>(int min, int max)</argsstring>
+        <name>random</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>retorna um número inteiro que define o intervalo entre dois números inteiros aleatórios </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o limite inferior dos dados aleatórios desejados </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>é o limite superior dos dados aleatórios desejados </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true or false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="55" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.cpp" bodystart="58" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>QMainWindow</label>
+      </node>
+      <node id="0">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QMainWindow</label>
+      </node>
+      <node id="2">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" line="14" column="1" bodyfile="Qtsupervisory-master/QtTcpClientProducer/mainwindow.h" bodystart="13" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_main_window_1ae9f09805219987e75b0c0636def59528" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ip</name></member>
+      <member refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_main_window_1afdfeb13ec363b0eb8ecacaf0aa13b605" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>putData</name></member>
+      <member refid="class_main_window_1ab578b34d109b5f7a290ef3d75cb3ad6c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>random</name></member>
+      <member refid="class_main_window_1af85cfe62c116f8d2f2021e5411b0356e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>socket</name></member>
+      <member refid="class_main_window_1a5edcbc314e782645cdf4db101eeb247d" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>start</name></member>
+      <member refid="class_main_window_1a939e90ddfe07d74be87b351ca2171fb0" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>stop</name></member>
+      <member refid="class_main_window_1ac5b669957c442b6eb68573dacfce33e1" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>tcpConnect</name></member>
+      <member refid="class_main_window_1a4d22c4c7afc7ba0a2fa4c70515c85dda" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>tcpDisconnect</name></member>
+      <member refid="class_main_window_1ab4f483f5c695321518ac4bf1aa136f64" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>timer</name></member>
+      <member refid="class_main_window_1a9d08a694a5f9c532225754381b8011ea" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>timerEvent</name></member>
+      <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

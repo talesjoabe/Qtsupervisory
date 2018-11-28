@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Projeto<sp/>de<sp/>Programação<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Apresentação<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>presente<sp/>projeto<sp/>visa<sp/>desenvolver<sp/>o<sp/>aluno<sp/>na<sp/>prática<sp/>de<sp/>programação</highlight></codeline>
+<codeline><highlight class="normal">orientada<sp/>a<sp/>objetos<sp/>usando<sp/>a<sp/>biblioteca<sp/>Qt.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>projeto<sp/>consiste<sp/>em<sp/>três<sp/>programas<sp/>de<sp/>computador<sp/>que<sp/>trabalham<sp/>em</highlight></codeline>
+<codeline><highlight class="normal">conjunto<sp/>para<sp/>simular<sp/>um<sp/>sistema<sp/>simples<sp/>de<sp/>aquisição<sp/>e<sp/>supervisão<sp/>de</highlight></codeline>
+<codeline><highlight class="normal">dados<sp/>usando<sp/>comunicação<sp/>TCP/IP<sp/>em<sp/>uma<sp/>rede<sp/>local.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Em<sp/>suma,<sp/>os<sp/>três<sp/>módulos<sp/>devem<sp/>ser<sp/>capazes<sp/>de<sp/>realizar<sp/>as<sp/>seguintes</highlight></codeline>
+<codeline><highlight class="normal">operações:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>O<sp/>**servidor**<sp/>deve<sp/>esperar<sp/>conexões<sp/>TCP<sp/>destinadas<sp/>à<sp/>porta<sp/>1234,<sp/>e</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>responder<sp/>ao<sp/>cliente<sp/>conforme<sp/>os<sp/>comandos<sp/>que<sp/>este<sp/>enviar.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>O<sp/>**cliente<sp/>produtor**<sp/>de<sp/>dados<sp/>deve<sp/>ser<sp/>capaz<sp/>de<sp/>se<sp/>conectar<sp/>a<sp/>uma</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>máquina<sp/>executando<sp/>o<sp/>servidor<sp/>na<sp/>porta<sp/>1234<sp/>e<sp/>enviar,<sp/>usando</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>comandos<sp/>específicos,<sp/>marcações<sp/>de<sp/>data/hora<sp/>juntamente<sp/>com<sp/>uma</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>informação<sp/>em<sp/>ponto<sp/>flutuante<sp/>para<sp/>ser<sp/>gravada.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>O<sp/>**cliente<sp/>supervisor**<sp/>de<sp/>dados<sp/>deve<sp/>ser<sp/>capaz<sp/>de<sp/>se<sp/>conectar<sp/>a<sp/>uma</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>máquina<sp/>executando<sp/>o<sp/>servidor<sp/>na<sp/>porta<sp/>1234<sp/>e<sp/>recuperar,<sp/>usando</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>comandos<sp/>específicos,<sp/>a<sp/>lista<sp/>dos<sp/>clientes<sp/>produtores<sp/>de<sp/>dados,<sp/>bem</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>como<sp/>listagens<sp/>de<sp/>dados<sp/>produzidos<sp/>por<sp/>um<sp/>destes<sp/>clientes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>produtores.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>aluno<sp/>deverá<sp/>desenvolver<sp/>apenas<sp/>os<sp/>**cliente<sp/>produtor**<sp/>e<sp/>o</highlight></codeline>
+<codeline><highlight class="normal">**cliente<sp/>supervisor**.<sp/>O<sp/>módulo<sp/>**servidor**<sp/>já<sp/>está<sp/>pronto<sp/>e<sp/>não</highlight></codeline>
+<codeline><highlight class="normal">precisa<sp/>ser<sp/>trabalhado.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>O<sp/>módulo<sp/>servidor</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>módulo<sp/>servidor<sp/>implementa<sp/>o<sp/>que<sp/>se<sp/>chama<sp/>de<sp/>servidor<sp/>TCP.<sp/>Em<sp/>outras</highlight></codeline>
+<codeline><highlight class="normal">palavras,<sp/>esse<sp/>programa<sp/>é<sp/>capaz<sp/>de<sp/>escutar<sp/>a<sp/>rede<sp/>local<sp/>e<sp/>aguardar<sp/>por</highlight></codeline>
+<codeline><highlight class="normal">conexões<sp/>remotas<sp/>destinadas<sp/>à<sp/>porta<sp/>TCP/1234.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Em<sp/>redes<sp/>TCP/IP,<sp/>o<sp/>protocolo<sp/>de<sp/>comunicação<sp/>TCP<sp/>permite<sp/>a<sp/>criação<sp/>de</highlight></codeline>
+<codeline><highlight class="normal">um<sp/>circuito<sp/>virtual,<sp/>um<sp/>canal<sp/>de<sp/>comunicação<sp/>que<sp/>pode<sp/>ser<sp/>usado<sp/>para</highlight></codeline>
+<codeline><highlight class="normal">enviar<sp/>e<sp/>receber<sp/>sequências<sp/>de<sp/>bytes<sp/>pela<sp/>Internet.<sp/>O<sp/>canal<sp/>é<sp/>fechado</highlight></codeline>
+<codeline><highlight class="normal">apenas<sp/>quando<sp/>a<sp/>conexão<sp/>é<sp/>interrompida.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Para<sp/>se<sp/>abrir<sp/>uma<sp/>conexão<sp/>com<sp/>uma<sp/>máquina<sp/>que<sp/>executa<sp/>um<sp/>determinado</highlight></codeline>
+<codeline><highlight class="normal">serviço<sp/>usando<sp/>o<sp/>protocolo<sp/>TCP<sp/>é<sp/>necessário<sp/>que<sp/>se<sp/>conheça<sp/>seu</highlight></codeline>
+<codeline><highlight class="normal">endereço<sp/>IP<sp/>(ou<sp/>nome)<sp/>e<sp/>uma<sp/>_porta_<sp/>onde<sp/>o<sp/>serviço<sp/>será</highlight></codeline>
+<codeline><highlight class="normal">provido.<sp/>Quando<sp/>a<sp/>conexão<sp/>é<sp/>aberta<sp/>para<sp/>um<sp/>novo<sp/>cliente,<sp/>inicia-se<sp/>um</highlight></codeline>
+<codeline><highlight class="normal">_socket_<sp/>de<sp/>comunicação,<sp/>identificado,<sp/>entre<sp/>outras<sp/>coisas,<sp/>pela</highlight></codeline>
+<codeline><highlight class="normal">combinação<sp/>IP+porta.<sp/>Cada<sp/>_socket_<sp/>possui<sp/>um<sp/>número<sp/>único<sp/>que</highlight></codeline>
+<codeline><highlight class="normal">pode<sp/>ser<sp/>usado<sp/>para<sp/>distinguir<sp/>entre<sp/>as<sp/>várias<sp/>conexões<sp/>que<sp/>podem</highlight></codeline>
+<codeline><highlight class="normal">chegar<sp/>à<sp/>mesma<sp/>porta.<sp/>Isso<sp/>é<sp/>comum<sp/>em<sp/>máquinas<sp/>que<sp/>provêem<sp/>serviços<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">vários<sp/>clientes.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Máquinas<sp/>que<sp/>aguardam<sp/>conexões<sp/>comumente<sp/>chamadas<sp/>de<sp/>**servidores**.<sp/>O</highlight></codeline>
+<codeline><highlight class="normal">servidor<sp/>implementado<sp/>neste<sp/>projeto<sp/>_escuta_<sp/><sp/>a<sp/>porta<sp/>**1234**.<sp/>Uma</highlight></codeline>
+<codeline><highlight class="normal">vez<sp/>que<sp/>um<sp/>cliente<sp/>se<sp/>conecte<sp/>a<sp/>esta,<sp/>as<sp/>tarefas<sp/>que<sp/>o<sp/>servidor<sp/>irá</highlight></codeline>
+<codeline><highlight class="normal">executar<sp/>dependerão<sp/>de<sp/>mensagens<sp/>enviadas<sp/>pelo<sp/>cliente.<sp/>Para<sp/>cada</highlight></codeline>
+<codeline><highlight class="normal">mensagem,<sp/>uma<sp/>tarefa<sp/>diferente<sp/>é<sp/>executada.<sp/>É<sp/>dessa<sp/>maneira<sp/>que<sp/>os</highlight></codeline>
+<codeline><highlight class="normal">vários<sp/>serviços<sp/>na<sp/>Internet<sp/>funcionam.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>servidor<sp/>do<sp/>projeto<sp/>não<sp/>necessita<sp/>de<sp/>modificações<sp/>para</highlight></codeline>
+<codeline><highlight class="normal">funcionar.<sp/>Basta<sp/>abrir<sp/>o<sp/>projeto<sp/>no<sp/>QtCreator,<sp/>compilar<sp/>e<sp/>executar<sp/>o</highlight></codeline>
+<codeline><highlight class="normal">código.<sp/>O<sp/>servidor<sp/>é<sp/>capaz<sp/>de<sp/>interpretar<sp/>mensagens<sp/>em<sp/>texto<sp/>simples</highlight></codeline>
+<codeline><highlight class="normal">que<sp/>lhe<sp/>forem<sp/>enviadas.<sp/>As<sp/>mensagens<sp/>aceitas<sp/>pelo<sp/>servidor<sp/>formam<sp/>o</highlight></codeline>
+<codeline><highlight class="normal">que<sp/>se<sp/>chama<sp/>de<sp/>**protocolo<sp/>de<sp/>aplicação**<sp/>para<sp/>este<sp/>serviço.<sp/>Três</highlight></codeline>
+<codeline><highlight class="normal">mensagens<sp/>são<sp/>suportadas<sp/>nesse<sp/>protocolo:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">list</highlight></codeline>
+<codeline><highlight class="normal">get<sp/>NUMERO_IP<sp/>N_AMOSTRAS</highlight></codeline>
+<codeline><highlight class="normal">set<sp/>DATA_E_HORA_EM_MS<sp/>DADO</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>comando<sp/>**_list_**<sp/>retorna<sp/>a<sp/>lista<sp/>de<sp/>máquinas<sp/>cujos<sp/>dados</highlight></codeline>
+<codeline><highlight class="normal">produzidos<sp/>encontram-se<sp/>armazenados<sp/>no<sp/>servidor.<sp/>ex:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>telnet<sp/>127.0.0.1<sp/>1234</highlight></codeline>
+<codeline><highlight class="normal">list</highlight></codeline>
+<codeline><highlight class="normal">127.0.0.1</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>comando<sp/>**_get_**<sp/>precisa<sp/>que<sp/>se<sp/>forneça<sp/>também<sp/>o<sp/>número<sp/>IP<sp/>do</highlight></codeline>
+<codeline><highlight class="normal">**cliente<sp/>produtor**<sp/>que<sp/>se<sp/>deseja<sp/>recuperar<sp/>o<sp/>conjunto<sp/>de<sp/>dados</highlight></codeline>
+<codeline><highlight class="normal">produzidos.<sp/>ex:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>telnet<sp/>127.0.0.1<sp/>1234</highlight></codeline>
+<codeline><highlight class="normal">get<sp/>127.0.0.1<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">1496658174409<sp/>34</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>comando<sp/>**_set_**<sp/>precisa<sp/>que<sp/>se<sp/>forneça<sp/>uma<sp/>combinação<sp/>DATA<sp/>e<sp/>HORA,</highlight></codeline>
+<codeline><highlight class="normal">bem<sp/>como<sp/>o<sp/>dado<sp/>que<sp/>se<sp/>deseja<sp/>armazenar<sp/>no<sp/>servidor.<sp/>ex:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>telnet<sp/>127.0.0.1<sp/>1234</highlight></codeline>
+<codeline><highlight class="normal">set<sp/>127.0.0.1</highlight></codeline>
+<codeline><highlight class="normal">set<sp/>1496658174409<sp/>34</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Todos<sp/>os<sp/>comandos<sp/>devem<sp/>ser<sp/>enviados<sp/>na<sp/>forma<sp/>de<sp/>literais.<sp/>O<sp/>indicador</highlight></codeline>
+<codeline><highlight class="normal">de<sp/>data/hora<sp/>é<sp/>um<sp/>long<sp/>que<sp/>armazena<sp/>a<sp/>quantidade<sp/>de<sp/>milisegundos</highlight></codeline>
+<codeline><highlight class="normal">passados<sp/>desde<sp/>a<sp/>data<sp/>1/1/1970.<sp/>O<sp/>servidor,<sp/>uma<sp/>vez<sp/>que<sp/>receba<sp/>essas</highlight></codeline>
+<codeline><highlight class="normal">sequências<sp/>de<sp/>literais,<sp/>separa-as<sp/>conforme<sp/>a<sp/>quantidade<sp/>de<sp/>espaços</highlight></codeline>
+<codeline><highlight class="normal">presentes<sp/>e<sp/>armazena<sp/>os<sp/>dados<sp/>associados<sp/>em<sp/>uma<sp/>estrutura<sp/>local<sp/>criada</highlight></codeline>
+<codeline><highlight class="normal">para<sp/>esse<sp/>fim.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Em<sp/>se<sp/>tratando<sp/>de<sp/>um<sp/>projeto<sp/>meramente<sp/>acadêmico,<sp/>pouco<sp/>controle<sp/>de</highlight></codeline>
+<codeline><highlight class="normal">erro<sp/>é<sp/>realizado<sp/>nessa<sp/>versão<sp/>inicial.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Quando<sp/>o<sp/>servidor<sp/>é<sp/>executado,<sp/>uma<sp/>mensagem<sp/>é<sp/>exibida<sp/>na<sp/>aba</highlight></codeline>
+<codeline><highlight class="normal">**Application<sp/>Output**<sp/>do<sp/>QtCreator<sp/>mostrando<sp/>o<sp/>IP<sp/>local<sp/>do<sp/>servidor,</highlight></codeline>
+<codeline><highlight class="normal">como<sp/>ilustram<sp/>as<sp/>linhas<sp/>a<sp/>seguir:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">server<sp/>started<sp/>at:</highlight></codeline>
+<codeline><highlight class="normal">&quot;192.168.1.106&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>O<sp/>módulo<sp/>cliente<sp/>produtor<sp/>de<sp/>dados</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>cliente<sp/>produtor<sp/>de<sp/>dados<sp/>deve<sp/>ser<sp/>capaz<sp/>de<sp/>se<sp/>conectar<sp/>a<sp/>um</highlight></codeline>
+<codeline><highlight class="normal">servidor<sp/>em<sp/>execução<sp/>e<sp/>enviar<sp/>comandos<sp/>**set**<sp/>para<sp/>este</highlight></codeline>
+<codeline><highlight class="normal">servidor.<sp/>Espera-se<sp/>que<sp/>esse<sp/>módulo<sp/>seja<sp/>capaz<sp/>de<sp/>simular<sp/>um<sp/>processo</highlight></codeline>
+<codeline><highlight class="normal">de<sp/>coleta<sp/>e<sp/>envio<sp/>de<sp/>dados<sp/>para<sp/>o<sp/>servidor<sp/>em<sp/>intervalos<sp/>periódicos.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>construção<sp/>do<sp/>cliente<sp/>deve<sp/>possibilitar<sp/>o<sp/>envio<sp/>de<sp/>dados</highlight></codeline>
+<codeline><highlight class="normal">(possivelmente<sp/>aleatórios)<sp/>para<sp/>o<sp/>servidor<sp/>em<sp/>intervalos<sp/>regulares<sp/>de</highlight></codeline>
+<codeline><highlight class="normal">tempo.<sp/>Para<sp/>isso,<sp/>seu<sp/>usuário<sp/>deverá<sp/>ser<sp/>capaz<sp/>de<sp/>realizar<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">seguintes<sp/>operações<sp/>no<sp/>módulo<sp/>produtor:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Indicar<sp/>o<sp/>IP<sp/>do<sp/>servidor<sp/>ao<sp/>qual<sp/>se<sp/>deseja<sp/>conectar</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Indicar<sp/>a<sp/>faixa<sp/>de<sp/>valores<sp/>(min-max)<sp/>que<sp/>poderão<sp/>ser<sp/>enviados<sp/>ao<sp/>servidor</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Indicar<sp/>o<sp/>intervalo<sp/>de<sp/>tempo<sp/>entre<sp/>o<sp/>envio<sp/>de<sp/>dois<sp/>dados<sp/>consecutivos</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Realizar<sp/>a<sp/>conexão<sp/>ao<sp/>pressionar<sp/>um<sp/>botão</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Iniciar<sp/>a<sp/>transmissão<sp/>de<sp/>dados<sp/>ao<sp/>pressionar<sp/>um<sp/>botão</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Finalizar<sp/>a<sp/>transmissão<sp/>de<sp/>dados<sp/>ao<sp/>pressionar<sp/>um<sp/>botão</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Exibir<sp/>os<sp/>dados<sp/>enviados<sp/>em<sp/>uma<sp/>janela<sp/>de<sp/>texto</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Um<sp/>exemplo<sp/>de<sp/>interface<sp/>para<sp/>o<sp/>módulo<sp/>produtor<sp/>de<sp/>dados<sp/>é<sp/>mostrado<sp/>na</highlight></codeline>
+<codeline><highlight class="normal">figura<sp/>que<sp/>segue:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Produtor<sp/>de<sp/>dados](images/dataproducer.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Consumidor<sp/>de<sp/>dados</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>consumidor<sp/>de<sp/>dados<sp/>assume<sp/>um<sp/>papel<sp/>mais<sp/>complexo<sp/>que<sp/>o<sp/>produtor.<sp/>O</highlight></codeline>
+<codeline><highlight class="normal">produtor<sp/>deve<sp/>ser<sp/>capaz<sp/>de<sp/>se<sp/>conectar<sp/>a<sp/>um<sp/>servidor<sp/>indicado,</highlight></codeline>
+<codeline><highlight class="normal">recuperar<sp/>os<sp/>endereços<sp/>das<sp/>máquinas<sp/>que<sp/>produziram<sp/>dados<sp/>e<sp/>traçar<sp/>um</highlight></codeline>
+<codeline><highlight class="normal">gráfico<sp/>data-hora<sp/>x<sp/>valor<sp/>de<sp/>uma<sp/>sequência<sp/>de<sp/>dados<sp/>fornecida<sp/>pelo</highlight></codeline>
+<codeline><highlight class="normal">servidor.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">O<sp/>usuário<sp/>do<sp/>módulo<sp/>consumidor<sp/>de<sp/>dados,<sp/>o<sp/>usuário<sp/>deverá<sp/>ter<sp/>à<sp/>sua</highlight></codeline>
+<codeline><highlight class="normal">disposição<sp/>as<sp/>seguintes<sp/>funcionalidades:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Indicar<sp/>o<sp/>endereço<sp/>IP<sp/>do<sp/>servidor<sp/>de<sp/>dados<sp/>ao<sp/>qual<sp/>o<sp/>cliente<sp/>deverá</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>se<sp/>conectar.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Iniciar<sp/>a<sp/>conexão<sp/>com<sp/>o<sp/>servidor<sp/>ao<sp/>se<sp/>pressionar<sp/>um<sp/>botão.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Uma<sp/>vez<sp/>conectado,<sp/>o<sp/>usuário<sp/>deverá<sp/>ter<sp/>a<sp/>disposição<sp/>uma<sp/>lista<sp/>das</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>máquinas<sp/>que<sp/>produziram<sp/>dados<sp/>no<sp/>servidor.<sp/>Isso<sp/>pode<sp/>ser</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>implementado<sp/>usando<sp/>um<sp/>**listwidget**.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>No<sp/>**listwidget**<sp/>o<sp/>usuário<sp/>deverá<sp/>ser<sp/>capaz<sp/>de<sp/>selecionar<sp/>a<sp/>máquina</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>cujos<sp/>dados<sp/>deseja<sp/>visualizar.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Com<sp/>uma<sp/>máquina<sp/>selecionada,<sp/>dois<sp/>botões<sp/>deverão<sp/>ficar<sp/>disponíveis</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>para<sp/>o<sp/>usuário:<sp/>um<sp/>para<sp/>começar<sp/>a<sp/>receber<sp/>os<sp/>dados<sp/>e<sp/>outro<sp/>para</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>parar<sp/>de<sp/>receber.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Deverá<sp/>ficar<sp/>disponível<sp/>a<sp/>possibilidade<sp/>de<sp/>modificar<sp/>o<sp/>intervalo<sp/>de</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>tempo<sp/>de<sp/>captura<sp/>entre<sp/>dois<sp/>conjuntos<sp/>de<sp/>dados<sp/>consecutivos,<sp/>ou</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>seja,<sp/>entre<sp/>o<sp/>envio<sp/>de<sp/>dois<sp/>comandos<sp/>_get </highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Para<sp/>cada<sp/>recepção<sp/>de<sp/>dados,<sp/>a<sp/>ferramenta<sp/>deverá<sp/>traçar<sp/>o<sp/>gráfico</highlight></codeline>
+<codeline><highlight class="normal">tempo<sp/>x<sp/>valor<sp/>do<sp/>conjunto<sp/>de<sp/>dados<sp/>lido<sp/>do<sp/>servidor.<sp/>Algumas<sp/>formas<sp/>de</highlight></codeline>
+<codeline><highlight class="normal">traçado<sp/>podem<sp/>ser<sp/>consideradas:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Traçar<sp/>todo<sp/>intervalo<sp/>de<sp/>valores<sp/>lido<sp/>do<sp/>servidor.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Traçar<sp/>um<sp/>subintervalo<sp/>dos<sp/>valores<sp/>lidos<sp/>(ex:<sp/>desenhar<sp/>apenas<sp/>as</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>últimas<sp/>30<sp/>amostras<sp/>obtidas).<sp/>Isso<sp/>pode<sp/>interessante<sp/>para<sp/>evitar<sp/>que</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>o<sp/>gráfico<sp/>fique<sp/>sobrecarregado.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Um<sp/>exemplo<sp/>de<sp/>interface<sp/>para<sp/>o<sp/>módulo<sp/>consumidor<sp/>de<sp/>dados<sp/>é<sp/>mostrado<sp/>na</highlight></codeline>
+<codeline><highlight class="normal">figura<sp/>que<sp/>segue:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Produtor<sp/>de<sp/>dados](images/dataconsumer.png)</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="C:/Users/C6-PROF/Downloads/Qtsupervisory-master/Qtsupervisory-master/README.md"/>
+  </compounddef>
+</doxygen>

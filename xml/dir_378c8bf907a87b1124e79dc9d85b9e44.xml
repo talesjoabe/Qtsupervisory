@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_378c8bf907a87b1124e79dc9d85b9e44" kind="dir">
+    <compoundname>Qtsupervisory-master</compoundname>
+    <innerdir refid="dir_032aacd351b8301533a719319f2e2a49">Qtsupervisory-master/QtTcpClientProducer</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Qtsupervisory-master/"/>
+  </compounddef>
+</doxygen>

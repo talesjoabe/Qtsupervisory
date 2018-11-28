@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_main_window" kind="class"><name>MainWindow</name>
+    <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
+    <member refid="class_main_window_1af85cfe62c116f8d2f2021e5411b0356e" kind="variable"><name>socket</name></member>
+    <member refid="class_main_window_1ae9f09805219987e75b0c0636def59528" kind="variable"><name>ip</name></member>
+    <member refid="class_main_window_1ab4f483f5c695321518ac4bf1aa136f64" kind="variable"><name>timer</name></member>
+    <member refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" kind="function"><name>MainWindow</name></member>
+    <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+    <member refid="class_main_window_1afdfeb13ec363b0eb8ecacaf0aa13b605" kind="slot"><name>putData</name></member>
+    <member refid="class_main_window_1ac5b669957c442b6eb68573dacfce33e1" kind="slot"><name>tcpConnect</name></member>
+    <member refid="class_main_window_1a4d22c4c7afc7ba0a2fa4c70515c85dda" kind="slot"><name>tcpDisconnect</name></member>
+    <member refid="class_main_window_1a5edcbc314e782645cdf4db101eeb247d" kind="slot"><name>start</name></member>
+    <member refid="class_main_window_1a939e90ddfe07d74be87b351ca2171fb0" kind="slot"><name>stop</name></member>
+    <member refid="class_main_window_1a9d08a694a5f9c532225754381b8011ea" kind="slot"><name>timerEvent</name></member>
+    <member refid="class_main_window_1ab578b34d109b5f7a290ef3d75cb3ad6c" kind="slot"><name>random</name></member>
+  </compound>
+  <compound refid="namespace_ui" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+  </compound>
+  <compound refid="dir_378c8bf907a87b1124e79dc9d85b9e44" kind="dir"><name>Qtsupervisory-master</name>
+  </compound>
+  <compound refid="dir_032aacd351b8301533a719319f2e2a49" kind="dir"><name>Qtsupervisory-master/QtTcpClientProducer</name>
+  </compound>
+</doxygenindex>
